@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="clipboard.png" />
+    <None Remove="department.png" />
+    <None Remove="earning.png" />
+    <None Remove="employees.png" />
+    <None Remove="exit.png" />
+    <None Remove="login.png" />
+    <None Remove="logout.png" />
+    <None Remove="position.png" />
+    <None Remove="tracking.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DB\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="clipboard.png" />
+    <Resource Include="department.png" />
+    <Resource Include="earning.png" />
+    <Resource Include="employees.png" />
+    <Resource Include="exit.png" />
+    <Resource Include="login.png" />
+    <Resource Include="logout.png" />
+    <Resource Include="position.png" />
+    <Resource Include="tracking.png" />
+  </ItemGroup>
+
+</Project>
